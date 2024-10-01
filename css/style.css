@@ -1,0 +1,9 @@
+.project-card:link,
+.project-card:visited {
+  transition: 0.1s;
+}
+
+.project-card:hover,
+.project-card:active {
+  transform: scale(1.07);
+}
