@@ -1,23 +1,21 @@
-// // Toggle Light and Dark Mode on the Website
-// document.addEventListener("DOMContentLoaded", () => {
-//   const themeToggleButton = document.getElementById("theme-toggle");
+// "use strict";
 
-//   // Function to get the current theme
-//   const getCurrentTheme = () =>
-//     document.documentElement.getAttribute("data-bs-theme") || "light";
+// DOM Components
+const navBar = document.querySelector(".navigation-bar");
 
-//   // Function to toggle between light and dark themes
-//   const toggleTheme = () => {
-//     const currentTheme = getCurrentTheme();
-//     const newTheme = currentTheme === "light" ? "dark" : "light";
-//     document.documentElement.setAttribute("data-bs-theme", newTheme);
-//     localStorage.setItem("theme", newTheme);
-//   };
+// Navbar Smooth Scroll Implementation:
+navBar.addEventListener("click", function (event) {
+  if (!event.target.classList.contains("linkedin-link")) {
+    event.preventDefault();
+  }
+  const targetClassId = event.target.getAttribute("href");
+  const targetSection = document
+    .querySelector(targetClassId)
+    .getBoundingClientRect();
 
-//   // Set the theme based on the user's preference or the stored theme
-//   const storedTheme = localStorage.getItem("theme") || getCurrentTheme();
-//   document.documentElement.setAttribute("data-bs-theme", storedTheme);
-
-//   // Add event listener to the button to toggle the theme on click
-//   themeToggleButton.addEventListener("click", toggleTheme);
-// });
+  window.scrollTo({
+    left: targetSection.left,
+    top: targetSection.top + window.pageYOffset,
+    behavior: "smooth",
+  });
+});
