@@ -43,17 +43,31 @@
         <header class="d-flex justify-content-center py-3">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a href="#hero" class="nav-link active" aria-current="page"
+              <a
+                href="#hero"
+                class="nav-link active nav-section-link"
+                aria-current="page"
+                id="hero-nav-link"
                 >Home</a
               >
             </li>
 
             <li class="nav-item">
-              <a href="#about-me" class="nav-link">About</a>
+              <a
+                href="#about-me"
+                class="nav-link nav-section-link"
+                id="about-me-nav-link"
+                >About</a
+              >
             </li>
 
             <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
+              <a
+                href="#projects"
+                class="nav-link nav-section-link"
+                id="projects-nav-link"
+                >Projects</a
+              >
             </li>
 
             <li class="nav-item">
@@ -116,7 +130,7 @@
       </div>
     </nav>
 
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" data-section="1">
       <div class="container my-5">
         <div
           class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
@@ -165,7 +179,7 @@
       </div>
     </section>
 
-    <section class="about-me" id="about-me">
+    <section class="about-me" id="about-me" data-section="2">
       <div class="container px-4 py-5">
         <h2 class="pb-2 border-bottom">About Me</h2>
 
@@ -294,7 +308,7 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" data-section="3">
       <div class="container px-4 py-0" id="custom-cards">
         <h2 class="pb-2 border-bottom mt-5">Projects</h2>
 
@@ -444,7 +458,7 @@
       </div>
     </section>
 
-    <section class="footer" id="footer">
+    <section class="footer" id="footer" data-section="4">
       <div class="container">
         <footer
           class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
