@@ -12,6 +12,7 @@
   position: sticky;
   top: 0;
   /* opacity: 0.95; */
+  z-index: 9999;
 }
 
 .navbar-white-bg {

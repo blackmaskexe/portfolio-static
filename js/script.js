@@ -83,7 +83,7 @@ const aboutObserver = new IntersectionObserver(
   },
   {
     root: null,
-    threshold: 0.8,
+    threshold: 0.6,
   }
 );
 aboutObserver.observe(aboutSection);
@@ -105,7 +105,7 @@ const projectsObserver = new IntersectionObserver(
   },
   {
     root: null,
-    threshold: 0.8,
+    threshold: 0.7,
   }
 );
 projectsObserver.observe(projectsSection);
