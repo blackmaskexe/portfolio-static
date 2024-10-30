@@ -97,10 +97,8 @@ const projectsObserver = new IntersectionObserver(
       // remove all actives:
       navBarSections.forEach(function (sectionLink) {
         sectionLink.classList.remove("active");
-        console.log("hati ya nahi pagal");
       });
       document.querySelector("#projects-nav-link").classList.add("active");
-      console.log("at least this block is runnung dow");
     }
   },
   {
@@ -112,3 +110,23 @@ projectsObserver.observe(projectsSection);
 
 ////////////////////////////////////////
 ////////////////////////////////////////
+
+// HERO SECTION SCRIPT:
+// Hero Press Play Smooth Scroll Implementation:
+document
+  .querySelector(".btn-press-play")
+  .addEventListener("click", function (event) {
+    if (!event.target.classList.contains("linkedin-link")) {
+      event.preventDefault();
+    }
+    const targetClassId = event.target.getAttribute("href");
+    const targetSection = document
+      .querySelector(targetClassId)
+      .getBoundingClientRect();
+
+    window.scrollTo({
+      left: targetSection.left,
+      top: targetSection.top + window.pageYOffset,
+      behavior: "smooth",
+    });
+  });
