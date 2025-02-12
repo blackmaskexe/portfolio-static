@@ -31,6 +31,45 @@ The website is built using the following technologies:
 - **CSS**: Styling the website to ensure a visually appealing design.
 - **JavaScript**: Adding interactivity to enhance user engagement.
 
-## Project Structure
+## Getting Started
 
-The repository is organized as follows:
+To view the website locally, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/blackmask-exe/portfolio-static.git
+   ```
+
+2. **Navigate to the Project folder**:
+
+   ```bash
+   cd portfolio-static
+   ```
+
+3. **Open index.html in your preffered browser**
+
+## Contributing:
+
+1. **Fork the repository**
+
+2. **Create a new branch:**
+
+   ```bash
+    git checkout -b feature/YourFeatureName
+
+   ```
+
+3. **Make changes, then commit your changes:**
+
+   ```bash
+   git commit -m 'Add Your Feature'
+   ```
+
+4. **Push to the branch:**
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. **Open a pull request**
