@@ -2,16 +2,6 @@
 
 Welcome to the repository for my personal portfolio website, which showcases my projects, skills, and more. You can view the live site at [prathamsnehi.com](https://prathamsnehi.com).
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Overview
 
 This project is a static portfolio website designed to provide a comprehensive overview of my professional experience, projects, and skills. The site is fully responsive, ensuring an optimal viewing experience across a wide range of devices.
